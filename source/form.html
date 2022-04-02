@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Pink</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="../source/img/logo-white-desktop.svg" alt="Логотип Pink" width="147" height="40">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toogle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="prestart">
+        <div class="prestart__wrapper">
+          <h1 class="prestart__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <p class="prestart__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        </div>
+      </section>
+      <section class="form">
+        <div class="form__wrapper">
+          <form action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="fullname">
+              <legend class="visually-hidden">Полное имя</legend>
+              <ul class="fullname__list">
+                <li class="fullname__item">
+                  <label class="fullname__label">Фамилия
+                    <input class="fullname__input" type="text" name="fullname" placeholder="Укажите фамилию *" required>
+                  </label>
+                </li>
+                <li class="fullname__item">
+                  <label class="fullname__label">Имя
+                    <input class="fullname__input" type="text" name="fullname" placeholder="Введите ваше имя *" required>
+                  </label>
+                </li>
+                <li class="fullname__item">
+                  <label class="fullname__label">Отчество
+                    <input class="fullname__input" type="text" name="fullname" placeholder="Ну и отчество тоже">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="use fieldset">
+              <legend class="fieldset__title">С каким приложением путешествовали?</legend>
+              <ul class="use__list">
+                <li class="use__item">
+                  <label class="use__label">
+                    <input class="use__input" type="radio" value="Pink_for_ios" name="use-radio">Pink для iOS
+                  </label>
+                </li>
+                <li class="use__item">
+                  <label class="use__label">
+                    <input class="use__input" type="radio" value="Pink_for_android" name="use-radio">Pink на Android
+                  </label>
+                </li>
+                <li class="use__item">
+                  <label class="use__label">
+                    <input class="use__input" type="radio" value="Pink_for_windows" name="use-radio">Windows Phone
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="contact-info fieldset">
+              <legend class="fieldset__title">контактная информация</legend>
+              <label class="contact-info__label">номер телефона
+                <input type="text ">
+              </label>
+            </fieldset>
+            <fieldset class="experience fieldset">
+              <legend class="fieldset__title">ваши безбашенные достижения в путешествии</legend>
+              <ul class="experience__list">
+                <li class="experience__item">
+                  <label class="experience__label">Сделал селфи с акулой
+                    <input class="experience__input" type="checkbox" name="shark" checked>
+                  </label>
+                </li>
+                <li class="experience__item">
+                  <label class="experience__label">Видел Чака Норриса
+                    <input class="experience__input" type="checkbox" name="chuck">
+                  </label>
+                </li>
+                <li class="experience__item">
+                  <label class="experience__label">Удержал башню
+                    <input class="experience__input" type="checkbox" name="tower" checked>
+                  </label>
+                </li>
+                <li class="experience__item">
+                  <label class="experience__label">Обгорел на пляже
+                    <input class="experience__input" type="checkbox" name="beach" checked>
+                  </label>
+                </li>
+                <li class="experience__item">
+                  <label class="experience__label">Накупил сувениров
+                    <input class="experience__input" type="checkbox" name="souvenir">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="emotions fieldset">
+              <label class="fieldset__title">опишите свои эмоции</label>
+              <textarea type="text" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <input type="submit" value="отправить форму">
+            <p class="form__comment">* — обязательные для заполнения поля</p>
+          </form>
+        </div>
+      </section>
+    </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__content">
+            <p class="footer__logo"></p>
+            <ul class="footer__items">
+              <li class="footer__item"></li>
+              <li class="footer__item"></li>
+              <li class="footer__item"></li>
+            </ul>
+            <p class="footer__developer">Разработано</p>
+          </div>
+        </div>
+    </footer>
+  </body>
+</html>
