@@ -1,0 +1,30 @@
+.advantages {
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 59px;
+}
+
+.advantages__prestart {
+  font-size: 50px;
+  line-height: 68.09px;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 72px;
+}
+
+.advantages__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__title {
+  font-size: 30px;
+  color: $basic-dark;
+  text-align: center;
+}
+
+.advantages__description {
+  text-align: center;
+}

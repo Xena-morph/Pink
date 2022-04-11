@@ -3,40 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Pink</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="../source/img/logo-white-desktop.svg" alt="Логотип Pink" width="147" height="40">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active" href="#">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="../source/img/logo-white-desktop.svg" alt="Логотип Pink" width="147" height="40">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toogle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
       <section class="prestart">
-        <div class="prestart__wrapper">
-          <h1 class="prestart__title">Фотографии пользователей</h1>
-          <p class="prestart__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        </div>
+        <h1 class="prestart__title">Фотографии пользователей</h1>
+      </section>
+    </header>
+    <main class="page-main">
+      <section class="start">
+        <p class="start__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </section>
       <section class="panorama">
         <div class="panorama__wrapper">

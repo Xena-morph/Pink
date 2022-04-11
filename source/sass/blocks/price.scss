@@ -1,0 +1,20 @@
+.price {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.price__th {
+  background-color: $table-head;
+  text-align: center;
+}
+
+.price__title {
+  color: $basic-light;
+  font-weight: bold;
+}
+
+.price__number {
+  color: $basic-light;
+  font-size: 24px;
+  font-weight: lighter;
+}

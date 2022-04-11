@@ -1,0 +1,32 @@
+.effect {
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 72px;
+}
+
+
+.effect__title {
+  font-size: 30px;
+  color: $basic-dark;
+}
+
+.effect__link {
+  color: $brand-color;
+  text-decoration: underline;
+}
+
+// .effect__text {
+//   width: 534px;
+//   position: relative;
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     width: 298px;
+//     height: 345px;
+//     background-image: url("../img/clock.png");
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     top: -200px;
+//     left: 0;
+//   }
+// }

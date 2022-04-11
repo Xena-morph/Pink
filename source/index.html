@@ -3,57 +3,60 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Pink</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="../source/img/logo-white-desktop.svg" alt="Логотип Pink" width="147" height="40">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Приложение Pink</h1>
-      <section class="prestart store">
-        <h2 class="visually-hidden">Где скачать приложение Pink?</h2>
-        <div class="prestart__wrapper">
-          <div class="prestart__text store__text">
-            <p class="prestart__title">Взгляните на жизнь иначе!</p>
-            <a  class="store__button">Скачать приложение</a>
-            <ul class="store__list">
-              <li class="store__item">
-                <a class="store__link"></a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="../source/img/logo-white-desktop.svg" alt="Логотип Pink" width="147" height="40">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toogle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Главная</a>
               </li>
-              <li class="store__item">
-                <a class="store__link"></a>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Фотографии</a>
               </li>
-              <li class="store__item">
-                <a class="store__link"></a>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">HTML Academy</a>
               </li>
             </ul>
-            <p class="store__footer">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-        </div>
-      </section>
+        </nav>
+        <h1 class="visually-hidden">Приложение Pink</h1>
+        <section class="store">
+          <h2 class="visually-hidden">Где скачать приложение Pink?</h2>
+          <div class="store__wrapper">
+            <div class="store__text">
+              <p class="store__title">Взгляните на жизнь иначе!</p>
+              <a  class="store__button">Скачать приложение</a>
+              <ul class="store__list">
+                <li class="store__item">
+                  <a class="store__link"></a>
+                </li>
+                <li class="store__item">
+                  <a class="store__link"></a>
+                </li>
+                <li class="store__item">
+                  <a class="store__link"></a>
+                </li>
+              </ul>
+              <p class="store__footer">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main class="page-main">
       <section class="advantages">
         <h2 class="visually-hidden">Приемущества</h2>
         <div class="advantages__wrapper">
@@ -74,7 +77,6 @@
           </ul>
         </div>
       </section>
-
       <section class="effect">
         <h2 class="visually-hidden">Эффект от использования приложения Pink</h2>
         <div class="effect__wrapper">
@@ -96,15 +98,15 @@
                 <h3 class="reviews__name">Николай Петров</h3>
                 <span class="reviews__description">25 лет, водитель трамвая</span>
               </li>
-              <li class="reviews__item slider__item">
-                <p class="reviews__text">«Отзыв-2»</p>
-                <h3 class="reviews__name">Николай Петров</h3>
-                <span class="reviews__description">25 лет, водитель трамвая</span>
+              <li class="reviews__item slider__item reviews__item-hidden">
+                <p class="reviews__text">«Олололололоололлоллололоололлоллололоололлоллололоололлоллололоололлоллололоололлоллололоололлоло»</p>
+                <h3 class="reviews__name">Иван Иванов</h3>
+                <span class="reviews__description">25 лет, водитель</span>
               </li>
-              <li class="reviews__item slider__item">
-                <p class="reviews__text">«Отзыв-3»</p>
-                <h3 class="reviews__name">Николай Петров</h3>
-                <span class="reviews__description">25 лет, водитель трамвая</span>
+              <li class="reviews__item slider__item reviews__item-hidden">
+                <p class="reviews__text">«Лылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылылы»</p>
+                <h3 class="reviews__name">Олег Олегов</h3>
+                <span class="reviews__description">65 лет, трамвай</span>
               </li>
             </ul>
             <p class="reviews__control slider__controls">

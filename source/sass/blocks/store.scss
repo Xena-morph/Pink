@@ -1,0 +1,39 @@
+.store {
+  line-height: 24px;
+}
+
+// .store__text {
+//   position: relative;
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     width: 1050px;
+//     height: 645px;
+//     background-image: url("../img/hand.png");
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     top: -500px;
+//     left: 500px;
+//   }
+// }
+
+.store__button {
+  font-size: 21px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.store__list {
+  list-style-type: none;
+}
+
+.store__footer {
+  font-weight: lighter;
+  text-align: center;
+  margin: 0;
+}
+
+
+
