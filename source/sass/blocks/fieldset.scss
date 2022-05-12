@@ -1,0 +1,16 @@
+.fieldset {
+  border: 2px solid $border;
+  border-radius: 1px;
+}
+
+.fieldset__title {
+  font-size: 14px;
+  color: $brand-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.fieldset__border {
+  border: 2px solid $border;
+  border-radius: 1px;
+}

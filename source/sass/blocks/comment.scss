@@ -1,0 +1,28 @@
+.comment {
+  font-size: 14px;
+  line-height: 24px;
+  background-color: $background;
+}
+
+.comment__name {
+  font-weight: bold;
+}
+
+.comment__time {
+  font-size: 12px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.comment__button {
+  color: $brand-color;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.comment__content {
+  text-align: center;
+  margin: 0;
+}

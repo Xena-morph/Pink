@@ -1,0 +1,30 @@
+.publish__slogan {
+  text-align: center;
+}
+
+.publish__editor {
+  background-color: $background;
+}
+
+.option__ranges {
+  list-style-type: none;
+}
+
+.option__button {
+  font-weight: bold;
+  line-height: 18px;
+  background-color: inherit;
+  border: 3px solid;
+  border-radius: 30px;
+
+  &--post {
+    color: $brand-color;
+    border-color: $brand-color;
+  }
+
+  &--cancel {
+    color: $basic;
+    border-color: $basic;
+    opacity: 0.1;
+  }
+}

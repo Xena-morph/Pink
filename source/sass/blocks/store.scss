@@ -1,24 +1,31 @@
 .store {
-  line-height: 24px;
+  outline: 5px solid red;
 }
 
-// .store__text {
-//   position: relative;
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     width: 1050px;
-//     height: 645px;
-//     background-image: url("../img/hand.png");
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     top: -500px;
-//     left: 500px;
+.store__wrapper {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.store__title {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+// .store__img {
+//   @media (min-width: $tablet-width) {
+//     width: 469px;
+//     height: 545px;
 //   }
 // }
 
 .store__button {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 18px;
   font-weight: bold;
   text-align: center;
@@ -27,13 +34,10 @@
 
 .store__list {
   list-style-type: none;
+  display: flex;
 }
 
 .store__footer {
   font-weight: lighter;
   text-align: center;
-  margin: 0;
 }
-
-
-

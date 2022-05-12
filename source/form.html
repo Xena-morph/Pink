@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Pink</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -34,17 +35,22 @@
         </nav>
       </div>
       <section class="prestart">
-        <h1 class="prestart__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <div class="prestart__wrapper">
+          <h1 class="prestart__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
       </section>
     </header>
     <main>
-      <section class="start">
-        <p class="start">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-      </section>
+      <div class="start">
+        <div class="start__wrapper">
+          <p class="start__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        </div>
+      </div>
       <section class="form">
+        <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
         <div class="form__wrapper">
           <form action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="fullname">
+            <fieldset class="fullname form__fullname">
               <legend class="visually-hidden">Полное имя</legend>
               <ul class="fullname__list">
                 <li class="fullname__item">
@@ -87,7 +93,10 @@
             <fieldset class="contact-info fieldset">
               <legend class="fieldset__title">контактная информация</legend>
               <label class="contact-info__label">номер телефона
-                <input type="text ">
+                <input class="contact-info__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </label>
+              <label class="contact-info__label">номер телефона
+                <input class="contact-info__input" type="email" name="email" placeholder="Введите почту *" required>
               </label>
             </fieldset>
             <fieldset class="experience fieldset">
@@ -122,10 +131,10 @@
             </fieldset>
             <fieldset class="emotions fieldset">
               <label class="fieldset__title">опишите свои эмоции</label>
-              <textarea type="text" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="fieldset__border" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
-            <input type="submit" value="отправить форму">
-            <p class="form__comment">* — обязательные для заполнения поля</p>
+            <input class="form__submit button" type="submit" value="отправить форму">
+            <p class="form__comment"><span class="form__mark">*</span> — обязательные для заполнения поля</p>
           </form>
         </div>
       </section>
@@ -143,5 +152,31 @@
           </div>
         </div>
     </footer>
+    <section class="modal">
+      <div class="modal__back">
+        <div class="modal__wrapper">
+          <div class="modal__content">
+            <h2 class="modal__title">Что-то пошло не так!</h2>
+            <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          </div>
+          <div class="modal__blank">
+            <button class="modal__button button">ок</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="modal">
+      <div class="modal__back">
+        <div class="modal__wrapper">
+          <div class="modal__content">
+            <h2 class="modal__title">Ваша заявка отправлена</h2>
+            <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+          </div>
+          <div class="modal__blank">
+            <button class="modal__button button">закрыть окно</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

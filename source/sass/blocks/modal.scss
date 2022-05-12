@@ -1,0 +1,33 @@
+.modal {
+  display: none;
+}
+
+.modal__back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__wrapper {
+  position: relative;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.modal__title {
+  font-size: 30px;
+  line-height: 40px;
+  color: $basic-dark;
+}
+
+.modal__text {
+  line-height: 24px;
+}
+
+.modal__blank {
+  background-color: $background;
+}

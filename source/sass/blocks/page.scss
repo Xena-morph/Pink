@@ -1,10 +1,9 @@
 .page__body {
   font-family: "opensans", "arial", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  padding: 0;
-  margin: 0;
-  min-height: 100%;
+  font-size: 14px;
+  line-height: 24px;
   background-color: $basic-light;
   color: $basic;
+  min-width: 320px;
+  min-height: 100%;
 }

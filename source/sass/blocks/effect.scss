@@ -1,7 +1,19 @@
-.effect {
-  width: 940px;
-  margin: 0 auto;
-  margin-bottom: 72px;
+.effect__wrapper {
+
+  @media (min-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
+    width: $tablet-wrapper;
+    border: 5px solid blue;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-wrapper;
+  }
 }
 
 
@@ -14,19 +26,3 @@
   color: $brand-color;
   text-decoration: underline;
 }
-
-// .effect__text {
-//   width: 534px;
-//   position: relative;
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     width: 298px;
-//     height: 345px;
-//     background-image: url("../img/clock.png");
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     top: -200px;
-//     left: 0;
-//   }
-// }

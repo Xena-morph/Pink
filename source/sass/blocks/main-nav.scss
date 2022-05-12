@@ -1,14 +1,41 @@
 .main-nav {
-  line-height: 18x;
-  margin-bottom: 98px;
+  line-height: 18px;
+  position: relative;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__logo {
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
 }
 
 .main-nav__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__link {
   color: inherit;
+}
+
+.main-nav__toogle {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
