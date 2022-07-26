@@ -9,54 +9,76 @@
   <body class="page__body">
     <h1 class="visually-hidden">Приложение Pink</h1>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <nav class="main-nav">
-          <a class="main-nav__logo">
-            <img src="../source/img/logo-white-mobile.svg" alt="Логотип Pink" width="74" height="23">
-          </a>
-          <div class="main-nav__wrapper">
-            <button class="main-nav__toogle" type="button">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__header">
+            <a class="main-nav__logo" href="index.html">
+              <svg class="main-nav__logo-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+                <g>
+                  <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+                  <path d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+                  <path d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+                  <path d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+                </g>
+              </svg>
+            </a>
+            <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">HTML Academy</a>
-              </li>
-            </ul>
           </div>
-        </nav>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+      </nav> 
         <section class="store">
           <h2 class="visually-hidden">Где скачать приложение Pink?</h2>
           <div class="store__wrapper">
             <p class="store__title">Взгляните на жизнь иначе!</p>
+            <img class="store__img">
             <div class="store__text">
-              <a  class="store__button">Скачать приложение</a>
+              <a href="#" class="store__button">Скачать приложение</a>
               <ul class="store__list">
                 <li class="store__item">
-                  <a class="store__link">Я</a>
+                  <a href="#" class="store__link store__link--apple"></a>
                 </li>
                 <li class="store__item">
-                  <a class="store__link">А</a>
+                  <a href="#" class="store__link store__link--android"></a>
                 </li>
                 <li class="store__item">
-                  <a class="store__link">В</a>
+                  <a href="#" class="store__link store__link--microsoft"></a>
                 </li>
               </ul>
-              <p class="store__footer">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+              <p class="store__footer">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
             </div>
-          </div>
+          </div> 
         </section>
-      </div>
     </header>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      
+      navMain.classList.remove('main-nav--nojs');
+      
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
     <main class="page-main">
       <section class="advantages">
         <h2 class="visually-hidden">Приемущества</h2>
@@ -125,42 +147,51 @@
       <section class="price">
         <h2 class="visually-hidden">Тарифы и стоимость</h2>
         <div class="price__wrapper">
-          <table class="price__table">
-            <tr class="price__tr">
-              <th class="price__th"></th>
-              <th class="price__th">
-                <span class="price__title">База</span>
-                <span class="price__number">1,99 USD</span>
-              </th>
-              <th class="price__th price__th--hit">
-                <span class="price__title">Стандарт</span>
-                <span class="price__number">3,99 USD</span>
-              </th>
-              <th class="price__th">
-                <span class="price__title">Анлим</span>
-                <span class="price__number">9,99 USD</span>
-              </th>
-            </tr>
-            <tr class="price__tr">
-              <td class="price__td">Розовый фильтр</td>
-              <td class="price__td"></td>
-              <td class="price__td"></td>
-              <td class="price__td"></td>
-            </tr>
-            <tr class="price__tr">
-              <td class="price__td">Смайлики</td>
-              <td class="price__td"></td>
-              <td class="price__td"></td>
-              <td class="price__td"></td>
-            </tr>
-            <tr class="price__tr">
-              <td class="price__td">Комментарии</td>
-              <td class="price__td"></td>
-              <td class="price__td"></td>
-              <td class="price__td"></td>
-            </tr>
-          </table>
-        </div>
+          <div class="price__slider">
+            <div class="price__slide price__slide--left">
+              <div class="slide__col">
+                <div class="price__head">Пустота</div>
+                <div class="price__cell">Розовый фильтр</div>
+                <div class="price__cell">Смайлики</div>
+                <div class="price__cell">Комментарии</div>
+              </div>
+            </div>
+            <div class="price__slide price__slide--base">
+              <div class="slide__col">
+                <div class="price__head">
+                  <span class="price__rate">база</span><span class="price__cost">1,99 USD</span>
+                </div>
+                <div class="price__cell"><span class="price__text">Розовый фильтр</span><span class="price__yes">1</span></div>
+                <div class="price__cell"><span class="price__text">Смайлики</span><span class="price__no">0</span></div>
+                <div class="price__cell"><span class="price__text">Комментарии</span><span class="price__no">0</span></div>
+              </div>
+            </div>
+            <div class="price__slide price__slide--standart">
+              <div class="slide__col">
+                <div class="price__head">
+                  <span class="price__rate price__rate--hit">стандарт</span><span class="price__cost">1,99 USD</span>
+                </div>
+                <div class="price__cell"><span class="price__text">Розовый фильтр</span><span class="price__yes">1</span></div>
+                <div class="price__cell"><span class="price__text">Смайлики</span><span class="price__yes">1</span></div>
+                <div class="price__cell"><span class="price__text">Комментарии</span><span class="price__no">0</span></div>
+              </div>
+            </div>
+            <div class="price__slide price__slide--anlime">
+              <div class="slide__col">
+                <div class="price__head">
+                  <span class="price__rate">анлим</span><span class="price__cost">1,99 USD</span>
+                </div>
+                <div class="price__cell"><span class="price__text">Розовый фильтр</span><span class="price__yes">1</span></div>
+                <div class="price__cell"><span class="price__text">Смайлики</span><span class="price__yes">1</span></div>
+                <div class="price__cell"><span class="price__text">Комментарии</span><span class="price__yes">1</span></div>
+              </div>
+            </div>
+          </div>
+          <p class="price__toggles">
+            <button class="price__toggle" type="button">1</button>
+            <button class="price__toggle" type="button">2</button>
+            <button class="price__toggle" type="button">3</button>
+          </p>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
@@ -185,17 +216,19 @@
       <section class="location">
         <h2 class="visually-hidden">Мы на карте</h2>
         <div class="location__wrapper">
+          <iframe class="location__map"src="https://www.google.ru/maps/d/embed?mid=1NiERkeAQxdjzrdMQ0gcSNCqIagpv5r_j&hl=ru&ehbc=2E312F">
+          </iframe>
         </div>
       </section>
     </main>
     <footer class="footer">
         <div class="footer__wrapper">
           <div class="footer__content">
-            <p class="footer__logo"></p>
+            <img class="footer__logo"  src="../img/logo-black-mobile.svg">
             <ul class="footer__items">
-              <li class="footer__item"></li>
-              <li class="footer__item"></li>
-              <li class="footer__item"></li>
+              <li class="footer__item">t</li>
+              <li class="footer__item">f</li>
+              <li class="footer__item">y</li>
             </ul>
             <p class="footer__developer">Разработано</p>
           </div>

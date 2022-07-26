@@ -1,43 +1,104 @@
-.store {
-  outline: 5px solid red;
-}
-
 .store__wrapper {
-  width: 280px;
+  padding-bottom: 38px;
+  border: 1px solid red;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
+    margin-top: 74px;
+    min-height: 545px;
+    position: relative;
   }
 }
 
 .store__title {
   font-size: 24px;
-  line-height: 28.8px;
+  line-height: 29px;
   font-weight: lighter;
   text-align: center;
+  margin-top: 29px;
+  margin-bottom: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-// .store__img {
-//   @media (min-width: $tablet-width) {
-//     width: 469px;
-//     height: 545px;
-//   }
-// }
+.store__img {
+  display: block;
+  width: 320px;
+  height: 286px;
+  background-image: url(/img/hand.png);
+  background-position: left bottom;
+  background-repeat: no-repeat; 
+  background-size: contain;
+  
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 660px;
+    height: 545px;
+    top: 0;
+    left: 0;
+    
+  }
+}
+
+.store__text {
+  margin-top: 28px;
+}
 
 .store__button {
+  width: 280px;
+  margin: 0 auto;
+  display: block;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
   text-align: center;
+  text-decoration: none;
+  color: inherit;
+  border: 3px solid $basic-light;
+  padding: 21px 0;
+  border-radius: 31px;
   cursor: pointer;
 }
 
 .store__list {
+  width: 280px;
   list-style-type: none;
   display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 38px;
+  margin-bottom: 31px;
+}
+
+.store__link--apple {
+  display: block;
+  width: 47px;
+  height: 56px;
+  background-image: url(/img/apple-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.store__link--android {
+  display: block;
+  width: 47px;
+  height: 56px;
+  background-image: url(/img/android-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.store__link--microsoft {
+  display: block;
+  width: 47px;
+  height: 56px;
+  background-image: url(/img/microsoft-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .store__footer {
   font-weight: lighter;
   text-align: center;
+  margin: 0;
 }

@@ -1,6 +1,7 @@
-.form__fullname {
-  border: none;
-  padding: 0;
+.form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .form__comment {
@@ -10,4 +11,62 @@
 
 .form__mark {
   color: $brand-color;
+}
+
+.form__fullname {
+  @media (min-width: $tablet-width) {
+    order: 10;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 433px;
+  }
+}
+
+.form__use {
+  @media (min-width: $tablet-width) {
+    order: 20;
+  }
+  
+  @media (min-width: $desktop-width) {
+    min-width: 433px;
+  }
+}
+
+.form__experience {
+  @media (min-width: $tablet-width) {
+    order: 40;
+  }
+  
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-wrapper;
+  }
+}
+
+.form__contact-info {
+  @media (min-width: $tablet-width) {
+    order: 30;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-wrapper;
+  }
+}
+
+.form__emotions {
+  @media (min-width: $tablet-width) {
+    order: 50;
+  }
+  
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-wrapper;
+  }
+}
+
+.form__submit {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    order: 60; 
+  }
 }

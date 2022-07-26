@@ -1,6 +1,20 @@
+.fullname {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .fullname__list {
   padding: 0;
+  margin: 0;
   list-style-type: none;
+}
+
+.fullname__item {
+  display: block;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .fullname__label {
@@ -14,4 +28,7 @@
   line-height: 30px;
   border: 2px solid $border;
   border-radius: 1px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }

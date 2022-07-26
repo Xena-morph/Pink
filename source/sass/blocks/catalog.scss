@@ -1,4 +1,14 @@
 .catalog__list {
   list-style-type: none;
   padding: 0;
+  display: grid;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

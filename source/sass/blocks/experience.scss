@@ -1,3 +1,16 @@
+.experience {
+  border: 2px solid $border;
+  border-radius: 1px;
+}
+
+.experience__title {
+  font-size: 14px;
+  color: $brand-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .experience__list {
   list-style-type: none;
 }
+

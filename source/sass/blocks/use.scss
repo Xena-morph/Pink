@@ -1,3 +1,16 @@
+.use {
+  border: 2px solid $border;
+  border-radius: 1px;
+}
+
+.use__title {
+  font-size: 14px;
+  color: $brand-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .use__list {
   list-style-type: none;
 }
+

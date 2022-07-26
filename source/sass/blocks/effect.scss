@@ -7,12 +7,12 @@
   @media (min-width: $tablet-width) {
     display: block;
     margin: 0 auto;
-    width: $tablet-wrapper;
+    min-width: $tablet-wrapper;
     border: 5px solid blue;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-wrapper;
+    min-width: $desktop-wrapper;
   }
 }
 

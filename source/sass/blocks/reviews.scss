@@ -1,11 +1,11 @@
 .reviews__list {
   list-style-type: none;
+  padding: 0;
 }
 
 .reviews__item {
   text-align: center;
   line-height: 30px;
-  border: 5px solid red;
   display: flex;
   flex-direction: column;
 }
@@ -38,5 +38,12 @@
 .reviews__text {
   @media (min-width: $tablet-width) {
       order: 1;
+    }
+}
+
+.reviews__control {
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
     }
 }

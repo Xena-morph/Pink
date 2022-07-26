@@ -1,3 +1,15 @@
+.contact-info {
+  border: 2px solid $border;
+  border-radius: 1px;
+}
+
+.contact-info__tittle {
+  font-size: 14px;
+  color: $brand-color;
+  text-transform: uppercase;
+  text-align: center;
+} 
+
 .contact-info__label {
   font-size: 14px;
   color: $brand-color;
@@ -9,3 +21,5 @@
   border: 2px solid $border;
   border-radius: 1px;
 }
+
+

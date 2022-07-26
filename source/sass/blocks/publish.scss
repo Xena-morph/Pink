@@ -4,6 +4,9 @@
 
 .publish__editor {
   background-color: $background;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .option__ranges {
