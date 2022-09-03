@@ -1,4 +1,4 @@
-.form__wrapper {
+.form__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -14,59 +14,104 @@
 }
 
 .form__fullname {
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     order: 10;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 433px;
+    width: 50%;
   }
 }
 
 .form__use {
+  width: 100%;
+  background-color: $background;
+
   @media (min-width: $tablet-width) {
+    background-color: inherit;
     order: 20;
   }
   
   @media (min-width: $desktop-width) {
-    min-width: 433px;
+    width: 50%;
   }
 }
 
 .form__experience {
+  width: 100%;
+  background-color: $background;
+
   @media (min-width: $tablet-width) {
     order: 40;
-  }
-  
-  @media (min-width: $desktop-width) {
-    min-width: $desktop-wrapper;
+    background-color: white;
   }
 }
 
 .form__contact-info {
+  width: 100%;
   @media (min-width: $tablet-width) {
     order: 30;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: $desktop-wrapper;
   }
 }
 
 .form__emotions {
+  width: 100%;
+  margin-bottom: 52px;
   @media (min-width: $tablet-width) {
     order: 50;
-  }
-  
-  @media (min-width: $desktop-width) {
-    min-width: $desktop-wrapper;
+    margin-bottom: 70px;
   }
 }
 
 .form__submit {
+  width: 100%;
+  @media (min-width: $tablet-width) {
+    order: 60; 
+  }
+}
+
+.form__submit-wrapper {
+  margin: 0 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    order: 60; 
+    align-items: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 130px;
+  }
+}
+
+.form__button {
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-bottom: 46px;
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
+}
+
+.form__comment {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.form__comment-tablet {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.form__comment-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
   }
 }

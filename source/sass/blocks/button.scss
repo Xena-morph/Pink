@@ -1,0 +1,12 @@
+.button {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid $border;
+  border-radius: 1px;
+  color: $basic-light;
+  background-color: $button;
+  cursor: pointer;
+  padding: 0;
+}

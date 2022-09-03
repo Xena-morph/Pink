@@ -1,33 +1,34 @@
 .publish__slogan {
   text-align: center;
+  padding: 49px 0 52px 0;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 73px 0 78px 0;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 67px 0 75px 0;
+  }
 }
 
 .publish__editor {
   background-color: $background;
+  border: 1px solid red;
+}
+
+.publish__photo {
+  width: 280px;
+  height: 374px;
+  padding-top: 20px;
+  margin: 0 20px;
+  display: block;
+}
+
+.publish__container {
+
   @media (min-width: $tablet-width) {
     display: flex;
-  }
-}
-
-.option__ranges {
-  list-style-type: none;
-}
-
-.option__button {
-  font-weight: bold;
-  line-height: 18px;
-  background-color: inherit;
-  border: 3px solid;
-  border-radius: 30px;
-
-  &--post {
-    color: $brand-color;
-    border-color: $brand-color;
-  }
-
-  &--cancel {
-    color: $basic;
-    border-color: $basic;
-    opacity: 0.1;
   }
 }

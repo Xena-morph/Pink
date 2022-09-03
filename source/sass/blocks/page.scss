@@ -1,14 +1,16 @@
 
 .page {
-  width: auto;
-}
-
-.page__body {
+  margin: 0;
   font-family: "opensans", "arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   background-color: $basic-light;
   color: $basic;
-  min-width: 320px;
-  min-height: 100%;
+}
+
+.page__header {
+  background-image: url("../img/background-main.jpg");
+  background-size: cover;
+  background-color: $basic-dark;
+  color: $basic-light;
 }

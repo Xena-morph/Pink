@@ -6,16 +6,17 @@
 
 // Blocks
 
+
+@import "blocks/button.scss";
 @import "blocks/page.scss";
-@import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/page-main.scss";
 @import "blocks/prestart.scss";
 @import "blocks/start.scss";
 @import "blocks/store.scss";
 @import "blocks/advantages.scss";
 @import "blocks/effect.scss";
 @import "blocks/reviews.scss";
+@import "blocks/slider.scss";
 @import "blocks/price.scss";
 @import "blocks/contacts.scss";
 @import "blocks/location.scss";
@@ -31,3 +32,7 @@
 @import "blocks/emotions.scss";
 @import "blocks/fullname.scss";
 @import "blocks/modal.scss";
+@import "blocks/option.scss";
+
+
+

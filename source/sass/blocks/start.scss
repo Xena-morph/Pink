@@ -1,4 +1,58 @@
 .start__text {
   text-align: center;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.start__text span {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.start__text--form {
+  min-width: 228px;
+  margin: 54px auto 55px auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 490px;
+    margin: 100px auto 82px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 747px;
+    margin: 100px auto 84px auto;
+  }
+}
+
+.start__text--catalog {
+  min-width: 172px;
+  margin: 54px auto 60px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 358px;
+    margin: 100px auto 85px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 572px;
+    margin: 100px auto 97px auto;
+  }
+}
+
+.start__text-note {
+  display: none;
+  
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }

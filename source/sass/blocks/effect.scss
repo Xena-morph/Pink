@@ -1,28 +1,65 @@
-.effect__wrapper {
-
-  @media (min-width: $mobile-width-only) {
-    display: none;
-  }
-
+.effect {
   @media (min-width: $tablet-width) {
-    display: block;
-    margin: 0 auto;
-    min-width: $tablet-wrapper;
-    border: 5px solid blue;
+    background-color: $basic-light;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: $desktop-wrapper;
+    background-color: $background;
   }
 }
 
+.effect__wrap-position {
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+    position: relative;
+    top: -64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
+}
+
+.effect__wrapper {
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: flex;
+      margin: 0 20px; 
+      padding-bottom: 67px;
+    }
+}
+
+.effect__picture {
+  width: 50%;
+  height: 276px;
+  margin-top: 54px;
+  background-image: url(/img/effect__picture.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.effect__text {
+  margin-top: 102px;
+  width: 50%;
+}
 
 .effect__title {
   font-size: 30px;
   color: $basic-dark;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.effect__description {
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .effect__link {
   color: $brand-color;
   text-decoration: underline;
+  margin: 0;
 }
+
+

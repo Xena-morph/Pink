@@ -1,16 +1,48 @@
-.emotions, .emotions__border {
+.emotions {
+  border: none;
+  padding: 0;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 53px 0;
     border: 2px solid $border;
     border-radius: 1px;
   }
-  
-  .emotions__title {
-    font-size: 14px;
-    color: $brand-color;
-    text-transform: uppercase;
-    text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 130px;
+  }
+}
+
+.emotions__content {
+  border: 2px solid $border;
+  border-radius: 1px;
+  min-height: 197px;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  padding: 22px 18px 22px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 60px;
   }
   
-  .experience__list {
-    list-style-type: none;
+}
+  
+.emotions__title {
+  font-size: 14px;
+  color: $brand-color;
+  text-transform: uppercase;
+  padding-top: 42px;
+  padding-bottom: 22px;
+  display: block;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 42px;
   }
+}
+
   

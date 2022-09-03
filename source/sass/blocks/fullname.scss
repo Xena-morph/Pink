@@ -4,23 +4,47 @@
   margin: 0;
 }
 
+.fullname__wrapper {
+  margin: 0 20px;
+  
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      margin-left: 130px;
+    }
+}
+
 .fullname__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  margin-bottom: 44px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .fullname__item {
   display: block;
+  
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: center;
   }
 }
 
 .fullname__label {
+  display: block;
   font-size: 14px;
   color: $brand-color;
   text-transform: uppercase;
+  margin-left: 23px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 20px;
+  }
 }
 
 .fullname__input {
@@ -31,4 +55,24 @@
   width: 100%;
   padding: 0;
   margin: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 20px; 
+}
+
+.fullname__list .fullname__item:nth-child(1),
+.fullname__list .fullname__item:nth-child(2) {
+  margin-bottom: 29px;
+}
+
+.fullname__list .fullname__item:nth-child(1) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.fullname__list .fullname__item:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }

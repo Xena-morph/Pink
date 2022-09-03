@@ -1,0 +1,92 @@
+.option {
+    padding-top: 43px;
+    padding-bottom: 41px;
+}
+
+.option__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 44px 14px;
+}
+
+.option__scale {
+    height: 2px;
+    width: 100%;
+    background-color: $basic;
+    position: relative;
+
+}
+
+.option__scale--fill, .option__scale--contrast {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: block;
+      }
+}
+
+.option__toggle {
+    width: 14px;
+    height: 14px;
+    border: 2px solid $brand-color;
+    border-radius: 50%;
+    position: absolute;
+    top: -6px;
+    background-color: $basic-light;
+}
+
+.option__button {
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: inherit;
+}
+
+.option__button--crop, .option__button--fill, .option__button--contrast {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.option__button--crop {
+    background-image: url(/img/option__button--crop.svg);
+}
+
+.option__button--fill {
+    background-image: url(/img/option__button--fill.svg);
+}
+
+.option__button--contrast {
+    background-image: url(/img/option__button--contrast.svg);
+}
+
+.option__submits {
+    margin: 0 20px;
+}
+
+.option__submit {
+    border: 3px solid;
+    border-radius: 30px;
+    color: $brand-color;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 0;
+
+    &:nth-child(1) {
+        margin-bottom: 12px;
+        border-color: $brand-color;
+        color: $brand-color;
+    }
+
+    &:nth-child(2) {
+        border-color: $basic;
+        color: $basic;
+        opacity: 0.1;
+    }
+}
+

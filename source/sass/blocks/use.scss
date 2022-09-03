@@ -1,6 +1,20 @@
 .use {
-  border: 2px solid $border;
-  border-radius: 1px;
+  border: none;
+  padding: 0;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $border;
+    border-radius: 1px;
+    margin-bottom: 51px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 130px;
+    margin-left: 74px;
+    height: 100%;
+  }
 }
 
 .use__title {
@@ -8,9 +22,81 @@
   color: $brand-color;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 42px;
+  padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .use__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 74px;
+    padding-top: 49px;
+  }
+}
+
+.use__item:nth-child(1), 
+.use__item:nth-child(2) {
+  margin-bottom: 38px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
+}
+
+.use__item:nth-child(3) {
+  margin-bottom: 42px;
+}
+
+.use__label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &:hover .use__control-mark  {
+    border: 2px $basic solid;
+  }
+
+  &:active .use__control-mark {
+    border: 2px $brand-color solid;
+  }
+}
+
+.use__control-mark {
+  display: block;
+  border: 2px $border solid;
+  width: 37px;
+  height: 37px;
+  background-color: white;
+  position: relative;
+  border-radius: 50%;
+  margin-right: 11px;
+}
+
+.use__input:checked ~ .use__control-mark::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 2px solid $brand-color;
+  background-color: $brand-color;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
 }
 

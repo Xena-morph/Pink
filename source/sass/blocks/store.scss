@@ -1,46 +1,57 @@
 .store__wrapper {
-  padding-bottom: 38px;
-  border: 1px solid red;
-
+  display: grid;
+  position: relative;
   @media (min-width: $tablet-width) {
-    margin-top: 74px;
-    min-height: 545px;
-    position: relative;
+    grid-template-columns: 50% 50%;
   }
+  
 }
 
 .store__title {
+  width: 240px;
   font-size: 24px;
   line-height: 29px;
   font-weight: lighter;
   text-align: center;
+  margin: 0 auto;
   margin-top: 29px;
   margin-bottom: 34px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
-.store__img {
-  display: block;
-  width: 320px;
-  height: 286px;
-  background-image: url(/img/hand.png);
-  background-position: left bottom;
-  background-repeat: no-repeat; 
-  background-size: contain;
-  
   @media (min-width: $tablet-width) {
-    position: absolute;
-    width: 660px;
-    height: 545px;
-    top: 0;
-    right: 0;
-    
+    font-size: 40px;
+    line-height: 120%;
   }
 }
 
-.store__text {
-  margin-top: 28px;
+.store__img {
+  background-image: url(/img/store__img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 320px;
+  min-height: 286px;
+  
+    @media (min-width: $tablet-width) {    
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+  
+}
+
+.store__container {
+  background-color: $basic;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.store__download {
+  padding-top: 28px;
+  padding-bottom: 38px;
+  margin: 0 auto;
 }
 
 .store__button {
@@ -57,24 +68,31 @@
   padding: 21px 0;
   border-radius: 31px;
   cursor: pointer;
+  
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .store__list {
   width: 280px;
+  margin: 0 auto;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   padding: 0;
-  margin: 0 auto;
   margin-top: 38px;
   margin-bottom: 31px;
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .store__link--apple {
   display: block;
   width: 47px;
   height: 56px;
-  background-image: url(/img/apple-logo.png);
+  background-image: url(/img/store__link--apple.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -83,7 +101,7 @@
   display: block;
   width: 47px;
   height: 56px;
-  background-image: url(/img/android-logo.png);
+  background-image: url(/img/store__link--android.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -92,7 +110,7 @@
   display: block;
   width: 47px;
   height: 56px;
-  background-image: url(/img/microsoft-logo.png);
+  background-image: url(/img/store__link--microsoft.png);
   background-repeat: no-repeat;
   background-position: center;
 }
