@@ -1,12 +1,12 @@
 .price__background {
-  background-image: url(/img/background-price.png);
+  background-image: url("/img/background-price.png");
   background-repeat: no-repeat;
   background-position: 0;
   background-size: cover;
   position: relative;
 
   @media (min-width: $tablet-width) {
-  background-position: 50% -30px;
+    background-position: 50% -30px;
   }
 }
 
@@ -19,7 +19,7 @@
   @media (min-width: $tablet-width) {
     min-width: 620px;
   }
-  
+
   @media (min-width: $desktop-width) {
     margin: 0 130px;
     min-width: 940px;
@@ -28,23 +28,27 @@
 
 .price__slider {
   display: flex;
-  background-color: $basic-light;
   color: $basic;
   text-transform: uppercase;
 }
 
 .price__slide {
   width: 100%;
+  border-left: 2px solid $border;
+
   @media (min-width: $tablet-width) {
+    border-left: none;
     min-width: 153px;
   }
-  
+
   @media (min-width: $desktop-width) {
     min-width: 233px;
   }
 }
 
-.price__slide--left, .price__slide--base, .price__slide--anlime {
+.price__slide--left,
+.price__slide--base,
+.price__slide--anlime {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -58,15 +62,24 @@
   }
 }
 
-.price__slide:nth-last-child(1) {
-  border-right: 2px solid $border;
-}
-
 .price__text {
   display: block;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.price__head--empty {
+  min-height: 94px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $border;
+    border-right: 2px solid $border;
   }
 }
 
@@ -86,37 +99,37 @@
 }
 
 .price__cell {
-  min-height: 59px; 
+  min-height: 59px;
   display: flex;
   justify-content: space-between;
   padding-left: 22px;
   padding-right: 19px;
+  background-color: $basic-light;
   align-items: center;
+  border-bottom: 2px solid $border;
+  border-right: 2px solid $border;
 
   @media (min-width: $tablet-width) {
+    background-color: $background;
     justify-content: center;
-    border-bottom: 2px solid $border;
-    border-right: 2px solid $border;
   }
 }
 
 .price__cell--left {
   @media (min-width: $tablet-width) {
-    justify-content: space-between; 
+    justify-content: space-between;
     border-left: 2px solid $border;
   }
 }
 
-
-
 .price__yes {
-  background-image: url(/img/price__yes.svg);
+  background-image: url("/img/price__yes.svg");
   width: 31px;
   height: 21px;
 }
 
 .price__no {
-  background-image: url(/img/price__no.png);
+  background-image: url("/img/price__no.svg");
   width: 27px;
   height: 27px;
 }
@@ -130,10 +143,6 @@
 .price__cost {
   font-size: 16px;
   font-weight: lighter;
-}
-
-.price__head--empty {
-  background: #F2F2F2;
 }
 
 .price__toggles {
@@ -150,16 +159,18 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  background-color: rgba(40, 54, 69, 0.3);
+  background-color: $basic;
   padding: 0;
   position: relative;
 
   &:hover {
-    background-color: rgba(40, 54, 69, 0.6);
+    background-color: $basic;
+    opacity: 0.6;
   }
 
   &:active {
-    background-color: rgba(40, 54, 69, 0.1);
+    background-color: $basic;
+    opacity: 0.1;
   }
 
   &--current::before {
@@ -169,9 +180,8 @@
     position: absolute;
     left: -3px;
     bottom: -3px;
-    background-color: #FFFFFF;
+    background-color: $basic-light;
     border: 3px solid $basic;
-    border-radius: 50%; 
-  }  
+    border-radius: 50%;
+  }
 }
-

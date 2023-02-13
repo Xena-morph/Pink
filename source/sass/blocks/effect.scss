@@ -21,19 +21,20 @@
 }
 
 .effect__wrapper {
-    display: none;
-    @media (min-width: $tablet-width) {
-      display: flex;
-      margin: 0 20px; 
-      padding-bottom: 67px;
-    }
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0 20px;
+    padding-bottom: 67px;
+  }
 }
 
 .effect__picture {
   width: 50%;
   height: 276px;
   margin-top: 54px;
-  background-image: url(/img/effect__picture.png);
+  background-image: url("/img/effect__picture.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -61,5 +62,3 @@
   text-decoration: underline;
   margin: 0;
 }
-
-

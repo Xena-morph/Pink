@@ -6,11 +6,11 @@
 
 .fullname__wrapper {
   margin: 0 20px;
-  
-    @media (min-width: $desktop-width) {
-      margin: 0;
-      margin-left: 130px;
-    }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 130px;
+  }
 }
 
 .fullname__list {
@@ -26,7 +26,7 @@
 
 .fullname__item {
   display: block;
-  
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@
   margin: 0;
   padding-top: 23px;
   padding-bottom: 23px;
-  padding-left: 20px; 
+  padding-left: 20px;
 }
 
 .fullname__list .fullname__item:nth-child(1),

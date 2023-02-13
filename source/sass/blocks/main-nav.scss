@@ -2,7 +2,7 @@
   line-height: 18px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.3);
-  
+
   @media (min-width: $desktop-width) {
     padding-left: 130px;
     padding-right: 130px;
@@ -27,7 +27,6 @@
 }
 
 .main-nav__logo-mobile {
-  fill: red;
   &:hover {
     fill: $brand-color;
   }
@@ -60,7 +59,7 @@
 .main-nav__list {
   list-style-type: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
   display: flex;
   flex-direction: column;
 
@@ -93,20 +92,15 @@
     left: 0;
     height: 2px;
     background: $basic-light;
-    display: none; 
-    
+    display: none;
+
     @media (min-width: $desktop-width) {
       display: block;
     }
-     
   }
-
- 
-
 }
 
 .main-nav__link {
-  color: inherit;
   position: relative;
   display: block;
   padding-top: 25px;
@@ -167,12 +161,12 @@
   right: 0;
   width: 50px;
   height: 4px;
-  background-color: white;
+  background-color: $basic-light;
   box-shadow: 0 8px 0 0 $basic-light, 0 16px 0 0 $basic-light;
 
   @media (min-width: $desktop-width) {
-      display: none;  
-    }
+    display: none;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -209,8 +203,10 @@
   }
 }
 
-.main-nav--opened, .main-nav--opened + .main-nav__list {
+.main-nav--opened,
+.main-nav--opened + .main-nav__list {
   background-color: $basic;
+
   @media (min-width: $desktop-width) {
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -219,7 +215,6 @@
 .main-nav--nojs {
   background-color: $basic;
 }
-
 
 .main-nav--nojs .main-nav__header .main-nav__toggle {
   display: none;

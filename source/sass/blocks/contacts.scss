@@ -8,10 +8,11 @@
   text-align: center;
   margin: 0;
   margin-bottom: 45px;
+  margin-top: 47px;
 
   @media (min-width: $tablet-width) {
     margin-top: 55px;
-    }
+  }
 }
 
 .contacts__container {
@@ -38,8 +39,7 @@
   color: $brand-color;
 }
 
-.contacts__container .contacts__content{
-
+.contacts__container .contacts__content {
   &:nth-child(1) {
     margin-bottom: 31px;
   }
@@ -55,7 +55,6 @@
 
 .location__map {
   margin: 0 auto;
-  width: 320px; 
+  width: 320px;
   height: 200px;
 }
-

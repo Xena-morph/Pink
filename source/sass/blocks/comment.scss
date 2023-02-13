@@ -34,12 +34,13 @@
   background-color: inherit;
   border: none;
   cursor: pointer;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 .comment__likes {
   position: relative;
   padding-left: 31px;
+  margin-top: auto;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -49,7 +50,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url(/img/catalog/heart.svg);
+    background-image: url("/img/catalog/heart.svg");
     width: 13px;
     height: 12px;
     left: 0;

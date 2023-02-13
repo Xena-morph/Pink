@@ -8,7 +8,7 @@
     border-radius: 1px;
     margin-bottom: 51px;
   }
-  
+
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-right: 130px;
@@ -45,7 +45,7 @@
   }
 }
 
-.use__item:nth-child(1), 
+.use__item:nth-child(1),
 .use__item:nth-child(2) {
   margin-bottom: 38px;
 
@@ -68,7 +68,7 @@
     line-height: 30px;
   }
 
-  &:hover .use__control-mark  {
+  &:hover .use__control-mark {
     border: 2px $basic solid;
   }
 
@@ -82,7 +82,7 @@
   border: 2px $border solid;
   width: 37px;
   height: 37px;
-  background-color: white;
+  background-color: $basic-light;
   position: relative;
   border-radius: 50%;
   margin-right: 11px;
@@ -99,4 +99,3 @@
   top: calc(50% - 8px);
   left: calc(50% - 8px);
 }
-

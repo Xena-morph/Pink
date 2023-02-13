@@ -3,13 +3,14 @@
 }
 
 .slider__list {
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 688px;
     margin: 0 auto;
   }
 }
 
-.slider__controls, .slider__toggles {
+.slider__controls,
+.slider__toggles {
   list-style-type: none;
   padding: 0;
 }
@@ -29,13 +30,14 @@
   }
 }
 
-.slider__control--prev, .slider__control--next {
+.slider__control--prev,
+.slider__control--next {
   width: 22px;
   height: 41px;
   border: none;
   background-color: inherit;
   cursor: pointer;
-  background-image: url(/img/slider__control.svg);
+  background-image: url("/img/slider__control.svg");
 }
 
 .slider__control--next {
@@ -74,11 +76,8 @@
     position: absolute;
     left: -3px;
     bottom: -3px;
-    background-color: #FFFFFF;
+    background-color: $basic-light;
     border: 3px solid $basic;
-    border-radius: 50%; 
+    border-radius: 50%;
   }
-  
 }
-
-
